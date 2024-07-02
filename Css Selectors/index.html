@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Selectors</title>
+
+  <!-- Element Selectors -->
+  <style>
+    /* Element Selectors */
+    div {
+      background-color: red;
+    }
+
+    /* class Selectors */
+    .green {
+      background-color: green;
+    }
+
+    /* child selectors : that means work only work div ke ander p tag hona chahiye agr kisi tag ke tag ke ander p rha to work nhi karega.*/
+    div>p {
+      background-color: brown;
+      color: blue;
+    }
+
+    /* Descendant selectors : is tag me div ke andr kahi bhi p tag ho work karega chahe p tag ke tag ke ander hi kyu na.. ho. */
+    div p {
+      background-color: brown;
+      color: white;
+      font-weight: 700;
+    }
+
+    /* universal selector */
+    * {
+      margin: 5px;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="red">
+    I am a Div & Class Selector
+  </div>
+  <div id="green">
+    I am another div & Id Selector
+    <p>I am paragraph</p>
+  </div>
+
+  <div>
+    I am another div & Id Selector
+    <article>
+      <p>I am paragraph</p>
+    </article>
+  </div>
+
+
+
+</body>
+
+</html>

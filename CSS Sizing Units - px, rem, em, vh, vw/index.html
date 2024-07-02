@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Sizing Units - px, rem, em, vh, vw, %</title>
+  <style>
+    .first {
+      height: 10vh;
+      border: 2px solid red;
+      margin: 25px auto;
+      /* font-size: 12px; */
+      background-color: antiquewhite;
+      /* this is parent div font size */
+    }
+
+    .para {
+      font-size: 2srem;
+      /* this is child div and this is depends on parent div font size*/
+    }
+
+    .second {
+      background-color: antiquewhite;
+      border: 2px solid red;
+      height: 60vh;
+      margin: auto;
+      font-size: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="first">
+    <p class="para">Jay ma renuka..</p>
+  </div>
+
+  <div class="second">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam voluptatibus numquam at iure. Maiores
+      necessitatibus nulla iste eaque dolore ducimus eveniet veritatis soluta reprehenderit eligendi, at quidem odio
+      quam perferendis voluptatum non deserunt quae odit molestiae distinctio nemo laudantium accusantium laborum? Ab
+      quidem et quae corrupti libero magni expedita nostrum deserunt fuga facere.</p>
+  </div>
+
+</body>
+
+</html>

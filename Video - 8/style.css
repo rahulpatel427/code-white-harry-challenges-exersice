@@ -1,0 +1,23 @@
+p {
+  background-color: blue;
+  color: whitesmoke;
+}
+
+div {
+  background-color: yellowgreen;
+}
+
+a {
+  background-color: red;
+}
+
+span {
+  background-color: green;
+  color: wheat;
+}
+
+.change-color {
+  background-color: white;
+  margin-bottom: 5px;
+  position: relative;
+}
