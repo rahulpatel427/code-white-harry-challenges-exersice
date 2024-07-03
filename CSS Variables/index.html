@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Variables</title>
+  <style>
+    /* ise kehte he root element or iska use hm variable banane me krte */
+    :root {
+      --color: rgb(233, 99, 99);
+      --seccolor: rgb(68, 159, 89);
+      --tcolor: white;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav {
+      background-color: blueviolet;
+    }
+
+    ul {
+      display: flex;
+    }
+
+    ul li {
+
+      list-style: none;
+      padding: 34px;
+      /* isme color: var(--tcolor, Black);  isme jo black color diya he uska mtlb he ki agr variable ka color kam nhi kiya some reson to black color dikh jae ya fir koi or color*/
+      color: var(--tcolor, Black);
+      font-weight: 600;
+      font-family: sans-serif;
+      border: 8px solid var(--tcolor);
+
+    }
+
+    ul li:first-child {
+      /* yha pr mene --color variable ko local varible me le aaya hu to ab iski propety parent pr work nhi karegi jb tk ki local variable available he. */
+      --color: rgb(113, 80, 80);
+      background-color: var(--color, white);
+      color: var(--tcolor, blueviolet);
+
+    }
+
+    .conainer {
+      background-color: bisque;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="nav">
+
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+
+    <div class="conainer">
+
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus soluta officiis cupiditate ipsum labore culpa
+      alias,
+      veniam deleniti quod itaque! Non temporibus perspiciatis, itaque iste harum modi repellendus unde totam, neque
+      corrupti aspernatur delectus culpa dolor expedita sapiente impedit odit ipsam ab perferendis et ea distinctio
+      debitis dicta? At rem nulla fuga quidem.
+    </div>
+  </div>
+</body>
+
+</html>
