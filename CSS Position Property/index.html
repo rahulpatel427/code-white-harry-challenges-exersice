@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Position Property</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* NOTE: defualt sbki position static hoti he... hme position change krke hi baki ki properties ko use kr skte he jese ki top:30px and other all */
+    .parent {
+      border: 2px solid purple;
+      margin: 42px;
+      padding: 30px;
+      position: absolute;
+    }
+
+    .box {
+      border: 2px solid red;
+      width: 80vw;
+      height: 433px;
+      padding: 3px;
+      margin: 3px;
+    }
+
+    .box1 {
+      background-color: aqua;
+      /* agr position absolute he to box vhi rhge but agr usme top lef bottom righ ka use kiya jae to vo uske parent div se puchega ki kya tumhare pass koi position he agr nhi he top  <html> se top lef bottom righ ka use krega or agr he to parent div ki position pr chalega */
+      /* position: absolute;
+      top: 8px;
+      left: 144px; 
+      z-index:0; ka use krke box ko uper or ander  kr skte he */
+
+      /* Position sticky means agr scroll aaye to jaha pr 0px diya he ..vha jaek chipak jaegi jb tk ki scroll na.. aaye.  */
+      position: sticky;
+      top: 0px;
+      height: 11px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    .box2 {
+      background-color: azure;
+      /* position: relative;
+      top: 30px;
+      left: 30px; */
+    }
+
+    .box3 {
+      background-color: rgba(125, 92, 49, 0.409);
+      /* position : fixed; krne pr box fix ho jeaga vo uski jagah se nhi hilega.. */
+      /* position: fixed;
+      bottom: 0px;
+      left: 8vw;
+      height: 211px; */
+    }
+
+    .box4 {
+      background-color: purple;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent">
+    <!-- Note: it is a Exception: agr trnasform: translate(0);
+    filter:inver(0);
+    perspective:0em;
+    lga he to position uske parent ke relative hi kam kregi na... ki html ke relative 
+    parent me chahiye positin na.. bhi lgi ho tb hi ye tino properties parent ke relative hi work karegi... 
+-->
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+  </div>
+</body>
+
+</html>

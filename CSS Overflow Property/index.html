@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSs Overflow Property</title>
+  <style>
+    .box {
+      border: 2px solid red;
+      width: 30vh;
+      height: 10vh;
+      /* first way */
+      /*  overflow auto means agr overlow huaa to dikhega nhi to nhi dikhega.  */
+      overflow: auto;
+      /*   white-space: nowrap; means para ek line me aa jaega line break nhi hogi.  */
+      /* white-space: nowrap; */
+      /* text-overflow: ellipsis isme text overlow huaa to ... dikhenge text nhi dikhega*/
+      /* text-overflow: ellipsis; */
+      overflow-x: hidden;
+      overflow-y: scroll;
+
+      /* Note: Jyada use overflow auto ka use kr skte he kyuki... agr scroll huaa to use hoga nhi to scroll nhi aayega */
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="box">
+    I am a good boy and I'm write Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ad voluptatum
+    asperiores distinctio temporibus modi ratione, sit culpa nobis earum libero dolorum et optio tempora, adipisci nam,
+    ipsam possimus? Eius.
+  </div>
