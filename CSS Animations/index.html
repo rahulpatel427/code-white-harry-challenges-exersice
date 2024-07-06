@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation</title>
+  <style>
+    .container {
+      background-color: orange;
+      width: 80vw;
+      height: 60vh;
+
+    }
+
+    .box {
+      background-color: bisque;
+      width: 80px;
+      height: 80px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      /* animation me sari property ek sath use kari he jo ki nhi krna chahiye tha */
+      /* animation: rahulKaAnimation 3s ease-in-out 1s 3 reverse; */
+      animation-name: rahulKaAnimation;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 1s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      /* animation-play-state: running; */
+
+    }
+
+    @keyframes rahulKaAnimation {
+      from {
+        background-color: black;
+        color: white;
+      }
+
+      to {
+        background-color: red;
+        transform: translateX(30vw) translateY(15vh) scale(3);
+        font-size: 30px;
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">Box</div>
+  </div>
+</body>
+
+</html>

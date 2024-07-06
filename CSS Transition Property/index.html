@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS TRansition Property</title>
+
+  <style>
+    .container {
+      background-color: blanchedalmond;
+      height: 50vh;
+      width: 50vw;
+    }
+
+    .box {
+      background-color: rgba(0, 0, 255, 0.537);
+      height: 5vh;
+      width: 8vw;
+      /* transition-property: background-color, transform;
+      transition-duration: 2s;
+      /* yha hm browser inspect kr ease in out ko set krke best timing function nikal skte he.*/
+      /* transition-timing-function: ease-in-out; niche wale or ye dono same he*/
+      /*transition-timing-function: cubic-bezier(0.58, 0.09, 0.68, 0.19);
+      transition-delay: 1s;
+      */
+      transition: all 3s ease-in-out 1s;
+    }
+
+    .translate {
+      transform: translateX(10vw) translateY(10vh) scale(2);
+      background-color: rgb(72, 51, 22);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box translate">
+
+    </div>
+  </div>
+</body>
+
+</html>
