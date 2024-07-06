@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exersice - 8</title>
+  <style>
+    .first {
+      background-color: blueviolet;
+      width: 80vw;
+      height: 80vh;
+      position: relative;
+    }
+
+    .box {
+      background-color: blue;
+      width: 111px;
+      height: 111px;
+      border-radius: 70px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      animation: ball 5s linear infinite,
+        ball2 1s ease-out infinite alternate;
+      /* ball2 2s  1s 2 alternate; */
+
+      /* 
+      transition-property: all;
+      transition-duration: 3s;
+      transition-delay: 1s;
+      transition-timing-function: cubic-bezier(0.46, -0.16, 1, 1.06); */
+
+    }
+
+
+    @keyframes ball {
+      from {
+        left: 0;
+      }
+
+      to {
+        left: 100%;
+      }
+    }
+
+    @keyframes ball2 {
+      from {
+        bottom: 0;
+      }
+
+      to {
+        bottom: 80%;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="first">
+    <div class="box "></div>
+  </div>
+</body>
+
+</html>
