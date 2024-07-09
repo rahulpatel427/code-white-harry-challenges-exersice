@@ -35,12 +35,11 @@ nav {
   height: 62px;
   position: relative;
   z-index: 10;
+  /* padding: 6px; */
 }
 
 nav img {
-  width: 114px;
-
-
+  width: 156px;
 }
 
 
@@ -83,8 +82,8 @@ nav img {
   height: 0.5rem;
   /* position: absolute; */
   bottom: -0.5rem;
-  /* background-color: rgb(35, 35, 35); */
-  background-color: orange;
+  background-color: rgb(35, 35, 35);
+  /* background-color: orange; */
 }
 
 .btn-english {
@@ -135,6 +134,7 @@ button {
   gap: 10px;
 }
 
+
 .first {
   display: flex;
   /* width: 70vw; */
@@ -152,8 +152,8 @@ button {
 }
 
 .secImg img {
-  /* max-width: 30vw; */
-  max-width: 40vw;
+  /* max-width: 40vw; */
+  max-width: 551px;
   position: relative;
   z-index: 10;
 
@@ -164,7 +164,7 @@ button {
   /* 
   top: 51px;
   right: -10px; */
-  top: 95px;
+  top: 80px;
   right: 69px;
   width: 75%;
 }
@@ -221,20 +221,21 @@ button {
   max-width: 75vw;
   margin: auto;
   justify-content: space-between;
-  font-size: 26px;
+  font-size: 25px;
   font-family: sans-serif;
   background-color: #2d2d2d;
-  padding: 20px 15px;
+  padding: 20px 29px;
   margin-bottom: 7px;
 }
 
 footer {
   color: white;
-  max-width: 60vw;
+  max-width: 72vw;
   margin: auto;
+  margin-bottom: 40px;
 }
 
-.footer .questions {
+.questions {
   padding: 34px 0;
 }
 
@@ -248,5 +249,122 @@ footer {
 .footer-item {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 
+}
+
+.footer-item a {
+  color: #ffffffb3;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.herosecond input {
+  padding: 14px 12px 12px 12px;
+  background-color: rgba(23, 23, 23, 0.2);
+  font-size: 17px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid rgb(152 152 152 / 50%);
+  /* margin: 50px 50px; */
+}
+
+.hero-span-bottom {
+  padding: 42px 20px;
+}
+
+.hero-btns2 {
+
+  margin-bottom: 52px;
+}
+
+@media screen and (max-width:1250px) {
+  .hero {
+    height: calc(100% - 75px);
+  }
+
+  .hero .hero-span1 {
+    font-size: 43px;
+  }
+
+  .hero .hero-span3 {
+    font-size: 22px;
+  }
+
+  .main {
+    height: 72vh;
+  }
+
+  .main .box {
+    height: 72vh;
+
+  }
+
+  nav {
+    max-width: 99vw;
+    padding: 6px;
+  }
+
+  .hero {
+    gap: 5px;
+    padding: 0px;
+  }
+
+  .hero-btns {
+    display: grid;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 10px;
+  }
+
+  nav img {
+    width: 80px;
+  }
+
+  .first {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .span-tv2 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .span-tv1 {
+    text-align: center;
+  }
+
+  .secImg img {
+    /* max-width: 40vw; */
+    max-width: 330px;
+  }
+
+  .secImg video {
+    top: 54px;
+    right: 47px;
+    width: 72%;
+  }
+
+  .secImg .video1 {
+    top: 20px;
+    right: 67px;
+    width: 62%;
+  }
+
+  .faqbox {
+    font-size: 20px;
+  }
+
+  .faq h1 {
+    font-size: 48px;
+  }
 }
