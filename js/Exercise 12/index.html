@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color the boxes using js properties</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+    }
+
+    .box {
+      width: 55px;
+      height: 55px;
+      border: 2px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 800;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="">Rahul patel GitHub link</a>
+  <div class="container">
+    <div class="box">Box-1</div>
+    <div class="box">Box-2</div>
+    <div class="box">Box-3</div>
+    <div class="box">Box-4</div>
+    <div class="box">Box-5</div>
+  </div>
+  <script>
+    document.body.firstElementChild.style.background = "orange";
+    document.body.firstElementChild.children[0].style.background = "blue";
+    document.body.firstElementChild.children[1].style.background = "red";
+    document.body.firstElementChild.children[2].style.background = "yellow";
+    document.body.firstElementChild.children[3].style.background = "green";
+    document.body.firstElementChild.children[4].style.background = "pink";
+  </script>
+</body>
+
+</html>
