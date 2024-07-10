@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inserting & removing element </title>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="box" style="display: flex;">
+      Hey I am a box.
+    </div>
+    <div class="box"> hey i am a box2</div>
+  </div>
+
+  <script>
+    let div = document.createElement("b");
+    div.innerHTML = "I have been inserted <b>By Rahul</b>"
+    div.setAttribute("rahul", "heyIamAClass"); // yha pr class ki jagah pr id bhi likh skte he.
+    document.querySelector(".container").append(div) // Note: document.querySelector(".container").append ko banana comple sury hoga.
+    // .append(), prend(), .before(), .after(), .replacewith append (div) div hi likhna pdega dusra option nhi he .. or kuch likhenge to nhi chlega...
+
+
+    // Note : togle class is an important to help a projects....
+  </script>
+</body>
+
+</html>
