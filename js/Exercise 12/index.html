@@ -24,11 +24,20 @@
       font-size: 20px;
       font-weight: 800;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      border-radius: 50px;
+    }
+
+    body {
+      background-color: black;
+      margin-top: 20%;
     }
   </style>
 </head>
 
 <body>
+  <h1><a target="_blank"
+      href="https://github.com/rahulpatel427/code-white-harry-challenges-exersice/blob/main/js/Exercise%2012/index.html">Rahul
+      Patel GitHub Link</a></h1>
   <div class="container">
     <div class="box">Box-1</div>
     <div class="box">Box-2</div>
@@ -37,14 +46,24 @@
     <div class="box">Box-5</div>
   </div>
   <script>
-    document.body.firstElementChild.style.background = "orange";
-    document.body.firstElementChild.children[0].style.background = "blue";
-    document.body.firstElementChild.children[1].style.background = "red";
-    document.body.firstElementChild.children[2].style.background = "yellow";
-    document.body.firstElementChild.children[3].style.background = "green";
-    document.body.firstElementChild.children[4].style.background = "pink";
+    let boxes = document.querySelector(".container").children
+    function getRandomColor() {
+      let val1 = Math.ceil(0 + Math.random() * 255)
+      let val2 = Math.ceil(0 + Math.random() * 255)
+      let val3 = Math.ceil(0 + Math.random() * 255)
+      return `rgb(${val1},${val2},${val3})`;
+    }
+
+    Array.from(boxes).forEach(e => {
+      e.style.backgroundColor = getRandomColor();
+      e.style.color = getRandomColor();
+      setInterval(() => {
+        location.reload();
+      }, 250);
+    })
 
   </script>
+
 </body>
 
 </html>
