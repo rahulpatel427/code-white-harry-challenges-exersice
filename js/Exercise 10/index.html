@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exersice - 10</title>
+</head>
+
+<body>
+  <script>
+    // question : Create a bussiness name generator by combining list of adjust 
+    //  Adjective:
+    // Crazy
+    // Amazing
+    // Fire
+
+    //  Shop Name:
+    // Engine
+    // Foods
+    // Garments
+
+    //  Another Word:
+    // Bros
+    // Limited
+    // Hub
+
+    // Lets generate the First word
+    // 0.33, 0.66, 1
+    let first, second, third;
+    let rand = Math.random();
+    if (rand < 0.33) {
+      first = "Crazy"
+    } else if (rand < 0.66 && rand >= 0.33) {
+      first = "Amazing"
+    } else {
+      first = "Fire"
+    }
+    // Lets generate the second word
+    rand = Math.random();
+    if (rand < 0.33) {
+      second = "Engine"
+    } else if (rand < 0.66 && rand >= 0.33) {
+      second = "Foods"
+    } else {
+      second = "Garments"
+    }
+    // Lets generate the third word
+    rand = Math.random();
+    if (rand < 0.33) {
+      third = "Bros"
+    } else if (rand < 0.66 && rand >= 0.33) {
+      third = "Limited"
+    } else {
+      third = "Hub"
+    }
+    console.log(`The bussiness name is :  ${first} ${second} ${third}`);
+  </script>
+</body>
+
+</html>
