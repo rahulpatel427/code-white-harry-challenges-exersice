@@ -20,6 +20,7 @@
   width: 78vw;
   /* padding: 5px; */
   /* height: 10vh; */
+  position: relative;
 }
 
 .home {
@@ -181,4 +182,20 @@
 
 .loginbtn:hover {
   font-size: 16px;
+}
+
+.playbar {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(71, 124, 28, 0.831);
+  width: 75vw;
+  padding: 13px;
+
+}
+
+.songbuttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
 }
