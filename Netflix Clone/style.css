@@ -106,6 +106,7 @@ button {
   border-radius: 4px;
   color: white;
   font-size: 21px;
+  border: none;
 }
 
 .btn-red {
@@ -114,6 +115,7 @@ button {
   padding: 8px 15px 8px 15px;
   border-radius: 4px;
   color: white;
+  border: none;
 }
 
 
@@ -132,6 +134,7 @@ button {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  border: none;
 }
 
 
