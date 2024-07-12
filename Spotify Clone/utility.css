@@ -47,3 +47,18 @@
 .pt-1 {
   padding: 10px;
 }
+
+/* Custom scrollbar styles for Webkit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6e6e6e;
+  border-radius: 6px;
+  border: 3px solid #2e2e2e;
+}
