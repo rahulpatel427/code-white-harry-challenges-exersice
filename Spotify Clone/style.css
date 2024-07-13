@@ -199,3 +199,32 @@
   gap: 15px;
   align-items: center;
 }
+
+.songList ul {
+  font-size: 14px;
+}
+
+.songList ul li {
+  list-style: none;
+  list-style-type: decimal;
+  display: flex;
+  border: 1px solid white;
+  gap: 3px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+}
+
+.playnow {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.info {
+  font-size: 12px;
+  width: 100%
+}
