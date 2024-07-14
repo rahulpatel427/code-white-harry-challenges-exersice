@@ -30,7 +30,17 @@
         </div>
         <div class="songList mt-1 p-1">
           <ul>
-
+            <!-- <li>
+              <img class="invert" src="img/music.svg" alt="music img">
+              <div class="info">
+                <div>Name Song</div>
+                <div>Name Artist</div>
+              </div>
+              <div class="playnow">
+                <span>Play Now</span>
+                <img class="invert" src="img/play.svg" alt="">
+              </div>
+            </li> -->
 
           </ul>
         </div>
@@ -108,21 +118,13 @@
 
           </div>
         </div>
-        <div class="abovebar">
-
-          <div class="songinfo">
-            Jay ma renuka jay ma renuka jay ma renuka jay ma renuka
-          </div>
-          <div class="songbuttons">
-            <img id="previous" src="img/prevsong.svg" alt="">
-            <img id="play" src="img/play.svg" alt="">
-            <img id="next" src="img/nextsong.svg" alt="">
-          </div>
-
-          <div class="songtime">
-            21:21
-          </div>
+        <div class="songbuttons">
+          <img src="img/prevsong.svg" alt="">
+          <img src="img/play.svg" alt="">
+          <img src="img/nextsong.svg" alt="">
         </div>
+
+
 
 
       </div>
@@ -135,3 +137,12 @@
 </body>
 
 </html>
+
+
+
+
+
+
+<div>{song.replaceAll(/%20|_/g, " ")}</div>
+
+let a = await fetch("file:///D:/Learning%20Html,%20css,%20js/Spotify%20Clone/Songs/")
