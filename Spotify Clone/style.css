@@ -20,6 +20,7 @@
   width: 78vw;
   /* padding: 5px; */
   /* height: 10vh; */
+  position: relative;
 }
 
 .home {
@@ -181,4 +182,94 @@
 
 .loginbtn:hover {
   font-size: 16px;
+}
+
+.playbar {
+  position: fixed;
+  bottom: 30px;
+  filter: invert(1);
+  background-color: #dad5d5;
+  border-radius: 60px;
+  width: 75vw;
+  height: 40px;
+  padding: 13px;
+
+}
+
+.songbuttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.songList {
+  max-height: 50vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.songList ul {
+  font-size: 14px;
+}
+
+.songList ul li {
+  list-style: none;
+  list-style-type: decimal;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.253);
+  gap: 3px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  padding: 5px;
+  /* width: 100%; */
+  font-family: 'Roboto', sans-serif;
+}
+
+.playnow {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.info {
+  font-size: 12px;
+  width: 100%
+}
+
+.seekbar {
+  width: 98%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 10px;
+  border-radius: 10px;
+  left: 9px;
+}
+
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 90px;
+  background-color: black;
+  position: relative;
+  bottom: 10px;
+  left: 0%;
+  transition: left 1s;
+}
+
+.abovebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.songinfo,
+songtime {
+  color: black;
+  padding: 0px 10px;
 }
