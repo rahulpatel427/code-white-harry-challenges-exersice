@@ -21,7 +21,7 @@ Step 3: Create src/input.css file to your html
 
 Step 4: Include the src/output.css file to your html
 
-Step 5: Run the following command
+Step 5: Run the following command in terminal
 
 ```
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
