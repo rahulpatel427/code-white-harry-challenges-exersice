@@ -4,3 +4,4 @@
 4> Select javaScript
 5> Select React
 7> npm install
+8> npm run dev
