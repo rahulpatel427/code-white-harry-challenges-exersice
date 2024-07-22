@@ -1,0 +1,26 @@
+ body {
+   background-color: orange;
+ }
+
+ nav,
+ ul {
+   display: flex;
+
+ }
+
+ li {
+   list-style: none;
+ }
+
+ ul {
+   gap: 23px;
+
+ }
+
+ nav {
+   background-color: rgb(240, 240, 230);
+   padding: 13px;
+   font-size: 23px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+ }
