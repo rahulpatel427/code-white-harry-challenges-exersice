@@ -21,11 +21,13 @@ const [todo, setTodo] = useState([
   },
 ])
 
-const Todo = ()=>{
+const Todo = ({todo})=>{
   return(
         <>
+        <div className='m-4 border   border-purple-500'>
         <div className="todo">{todo.title}</div>
         <div className="todo">{todo.desc}</div>
+        </div>
         </>
   )
 }
@@ -43,7 +45,7 @@ const Todo = ()=>{
 
 
        {todo.map(todo=>{
-        return <Todo todo={todo}/>
+        return <Todo key={todo.title} todo={todo}  />
        })}
 
 {/* This is a conditional Rendering  */}
