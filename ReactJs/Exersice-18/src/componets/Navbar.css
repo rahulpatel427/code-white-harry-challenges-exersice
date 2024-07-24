@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  background-color: orange;
+  margin-bottom: 13px;
+}
+
+ul {
+  display: flex;
+}
+
+li:first-child {
+  background-color: bisque;
+  padding: 10px;
+  border: 2px solid blue;
+  margin: 3px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  border: 2px solid red;
+  margin: 3px;
+  border-radius: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
