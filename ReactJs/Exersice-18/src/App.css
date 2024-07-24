@@ -1,0 +1,50 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  justify-content: center;
+
+
+}
+
+img {
+  width: 100%;
+  aspect-ratio: 3 / 3;
+}
+
+.card {
+  border: 1px solid #000;
+  max-width: 20vw;
+
+}
+
+.card h1,
+p {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  padding: 4px;
+  border-bottom: 2px solid red;
+  border-width: 3px;
+}
+
+.card span {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid red; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  padding: 4px;
+
+}
