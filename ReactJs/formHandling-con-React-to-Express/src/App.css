@@ -1,0 +1,32 @@
+.red {
+  color: red;
+}
+
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+.inField {
+  padding: 12px;
+  border-radius: 10px;
+  border-color: orange;
+
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn:hover {
+  padding: 12px;
+  border-radius: 10px;
+  background-color: rgb(107, 83, 39);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: all;
+  cursor: pointer;
+}
+
+.fieldContainer {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
