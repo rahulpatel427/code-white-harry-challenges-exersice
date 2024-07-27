@@ -19,7 +19,7 @@ function App() {
     });
   };
   const onSubmit = async (data) => {
-    await delay(2);
+    await delay(2); // semuleting network delay
     let r = await fetch("http://localhost:3000/", {
       method: "POST",
       headers: {
