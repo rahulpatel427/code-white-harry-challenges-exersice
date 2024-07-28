@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: orange;
+  color: white;
+  width: 95vw;
+  margin: auto;
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: orange;
+  color: white;
+  width: 95vw;
+  margin: auto;
+  padding: 10px;
+}
+
+.logo {
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+  display: flex;
+  gap: 23px;
+
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: flex-start;
+}
+
+.bg-slate {
+  background-color: slategray;
+}
+
+.text-white {
+  color: white;
+}
+
+.py-4 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
