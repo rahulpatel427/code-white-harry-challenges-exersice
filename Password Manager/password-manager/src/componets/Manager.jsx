@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { useRef, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Manager() {
   const ref = useRef();
@@ -37,10 +39,37 @@ function Manager() {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-
+  const copyText = (text) => {
+    navigator.clipboard.writeText(text);
+    toast(`${text} is copy`, {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+    console.log(text);
+  };
   return (
     <>
-      <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition="Bounce"
+      />
+      {/* Same as */}
+      <ToastContainer />
       <div className="  myconatainer">
         <div className="logo text-4xl text-white text-center  font-bold  ">
           <span className="text-green-700 font-bold">&lt;</span>
@@ -122,21 +151,54 @@ function Manager() {
                 {passwordArray.map((item, index) => {
                   return (
                     <tr key={index}>
-                      <td className=" text-[#2e176b] border border-white py-2 text-center w-32 ">
-                        <a href="{item.site}" target="_blank">
+                      <td className=" text-[#2e176b] border border-white py-2 cursor-pointer text-center w-32 ">
+                        <a
+                          href="{item.site}"
+                          target="_blank"
+                          className="flex justify-center items-center "
+                        >
                           {item.site}
                           <lord-icon
-                            src="https://cdn.lordicon.com/iykgtsvt.json"
+                            title="copy"
+                            style={{
+                              marginTop: "3px",
+                            }}
+                            src="https://cdn.lordicon.com/iykgtsbt.json"
                             colors="primary:#2e176b"
                             trigger="hover"
+                            onClick={() => copyText(item.site)}
                           ></lord-icon>
                         </a>
                       </td>
                       <td className=" text-[#2e176b] border border-white py-2 text-center w-32 ">
-                        {item.username}
+                        <div className="flex justify-center items-center">
+                          {item.username}
+                          <lord-icon
+                            title="copy"
+                            style={{
+                              marginTop: "3px",
+                            }}
+                            src="https://cdn.lordicon.com/iykgtsbt.json"
+                            colors="primary:#2e176b"
+                            trigger="hover"
+                            onClick={() => copyText(item.username)}
+                          ></lord-icon>
+                        </div>
                       </td>
                       <td className=" text-[#2e176b] border border-white py-2 text-center w-32 ">
-                        {item.password}
+                        <div className="flex justify-center items-center">
+                          {item.password}
+                          <lord-icon
+                            title="copy"
+                            style={{
+                              marginTop: "3px",
+                            }}
+                            src="https://cdn.lordicon.com/iykgtsbt.json"
+                            colors="primary:#2e176b"
+                            trigger="hover"
+                            onClick={() => copyText(item.password)}
+                          ></lord-icon>
+                        </div>
                       </td>
                     </tr>
                   );

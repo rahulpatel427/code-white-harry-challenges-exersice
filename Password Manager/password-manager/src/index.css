@@ -6,8 +6,6 @@
   .myconatainer {
     @apply container mx-auto px-40 py-16;
   }
-
-
 }
 
 .glow-on-hover {
@@ -144,4 +142,13 @@
   100% {
     background-position: 0 0;
   }
+}
+
+/* this is canvas css */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #2e176b;
 }

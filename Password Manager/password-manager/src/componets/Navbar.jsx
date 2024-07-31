@@ -30,10 +30,6 @@ function Navbar() {
           <img className="w-12" src="/icons/gitHub.png" alt="" />
           GitHub
         </button>
-        {/* <button className="flex bg-green-800  pr-3 rounded-full justify-center items-center font-bold text-white">
-          <img className="w-12" src="/icons/gitHub.png" alt="" />
-          GitHub
-        </button> */}
       </div>
     </nav>
   );
