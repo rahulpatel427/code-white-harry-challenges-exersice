@@ -145,6 +145,7 @@ function Manager() {
                   <th className="py-2">Site</th>
                   <th className="py-2">Username</th>
                   <th className="py-2">Password</th>
+                  <th className="py-2">Action</th>
                 </tr>
               </thead>
               <tbody className="bg-green-100">
@@ -199,6 +200,33 @@ function Manager() {
                             onClick={() => copyText(item.password)}
                           ></lord-icon>
                         </div>
+                      </td>
+                      <td className=" text-[#2e176b] border border-white py-2 text-center w-32 ">
+                        <span className="cursor-pointer">
+                          <lord-icon
+                            title="Edite"
+                            style={{
+                              marginTop: "3px",
+                            }}
+                            src="https://cdn.lordicon.com/gwlusjdu.json"
+                            colors="primary:#2e176b"
+                            trigger="hover"
+                            onClick={() => copyText(item.password)}
+                          ></lord-icon>
+                        </span>
+
+                        <span className="cursor-pointer mx-2">
+                          <lord-icon
+                            title="Edite"
+                            style={{
+                              marginTop: "3px",
+                            }}
+                            src="https://cdn.lordicon.com/skkahier.json"
+                            colors="primary:#2e176b"
+                            trigger="hover"
+                            onClick={() => copyText(item.password)}
+                          ></lord-icon>
+                        </span>
                       </td>
                     </tr>
                   );
